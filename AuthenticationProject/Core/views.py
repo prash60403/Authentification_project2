@@ -68,3 +68,4 @@ def LoginView(request):
             return redirect('login')
 
     return render(request, 'login.html')
+
