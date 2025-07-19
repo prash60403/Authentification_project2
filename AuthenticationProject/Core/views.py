@@ -8,7 +8,7 @@ from django.core.mail import EmailMessage
 from django.utils import timezone
 from django.urls import reverse
 from .models import *
-
+@login_required
 def Home(request):
     return render(request, 'index.html')
 
@@ -68,4 +68,9 @@ def LoginView(request):
             return redirect('login')
 
     return render(request, 'login.html')
+def LogoutView(request):
 
+    logout(request)
+
+    # redirect to login page after logout
+    return redirect('login')
