@@ -76,6 +76,8 @@ def LogoutView(request):
     return redirect('login')
 
 def ForgotPassword(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
     return render(request, 'forgot_password.html')
 
 def PasswordResetSent(request, reset_id):
