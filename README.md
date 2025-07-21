@@ -1,6 +1,6 @@
 # 🔐 Authentication Project
 
-This is a full-stack **user authentication system** built with **Django (backend)** and **Vue.js (frontend)**. It supports secure login, registration, email-based password reset, and password change functionalities.
+This is a full-stack **user authentication system** built with Django (backend). It supports secure login, registration, email-based password reset, and password change functionalities.
 
 ---
 
@@ -68,8 +68,7 @@ After setting a new password, the user sees a confirmation page and can proceed 
 ## 🧰 Tech Stack
 
 | Layer       | Technology             |
-|-------------|-------------------------|
-| Frontend    | Vue.js                  |
+|-------------|-------------------------|              |
 | Backend     | Django + Django REST    |
 | Auth System | JWT (Simple JWT)        |
 | Email       | SMTP (e.g., Gmail)      |
