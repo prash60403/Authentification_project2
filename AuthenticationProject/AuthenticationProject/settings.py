@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o(43%rt7sfd4n08apj10&ow439=6%j(z889^fn2!xl)z5r4o+l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://authentification-project2.onrender.com']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
